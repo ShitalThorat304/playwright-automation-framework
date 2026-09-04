@@ -38,5 +38,7 @@ pipeline {
     }
 environment {
     API_KEY = credentials('api-key')
+    CLIENT_ID = credentials('oauth-client-id')
+    CLIENT_SECRET = credentials('oauth-client-secret')
 }
 }
