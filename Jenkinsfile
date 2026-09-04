@@ -36,4 +36,7 @@ pipeline {
             )
         }
     }
+environment {
+    API_KEY = credentials('api-key')
+}
 }
