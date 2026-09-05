@@ -1,3 +1,4 @@
+require('dotenv').config();
 async function getAccessToken(request) {
 
   const response = await request.post(
@@ -6,7 +7,7 @@ async function getAccessToken(request) {
       data: {
         grantType: 'client_credentials',
         clientId: process.env.CLIENT_ID,
-        clientSecret: process.env.CLIENT_SECRET
+       clientSecret: process.env.CLIENT_SECRET
       }
     }
   );
