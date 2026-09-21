@@ -32,6 +32,4 @@ test.only('Validating Successfull Login', async({page}) => {
    console.log(await cardTitles.first().textContent());
    console.log(await cardTitles.nth(1).textContent());
    console.log(await cardTitles.allTextContents());
- 
-  
 });
